@@ -1,14 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - merfanian
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - UIC-InDeXLab/Needle
+  - UIC-InDeXLab/RSR
+  - UIC-InDeXLab/Chameleon
