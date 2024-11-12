@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Phd Student at UIC.
 
 profile:
   align: right
@@ -18,8 +18,5 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I'm Mahdi Erfanian, second year Ph.D. student in Computer Science at the University of Illinois Chicago, where I am a member of the [IndexLab](https://www.cs.uic.edu/~indexlab/) under the supervision of [Dr. Abolfazl Asudeh](https://www.cs.uic.edu/~asudeh/). I got my B.Sc in Computer Engineering from Sharif University of Technology. My research spans **Multi-modal Data Management**, **Algorithmic Fairness**, and **Foundation Models**.
+I am particularly interested in employing foundation models, including large language models, to address different challenges in data management—such as mitigating bias in training data and enhancing multi-modal data retrieval through synthetic data generation. Additionally, I am passionate about **Algorithm Design**, with a focus on optimizing both fairness and efficiency in data-driven systems.
