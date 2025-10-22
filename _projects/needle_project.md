@@ -2,7 +2,7 @@
 layout: page
 title: Needle
 description: A Generative AI-Powered Multi-modal Database for Answering Complex Natural Language Queries
-img: assets/img/12.jpg
+img: assets/img/needle.png
 importance: 1
 category: work
 related_publications: true

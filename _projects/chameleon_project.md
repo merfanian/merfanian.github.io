@@ -2,7 +2,7 @@
 layout: page
 title: Chameleon
 description: Foundation Models for Fairness-Aware Multi-Modal Data Augmentation
-img: assets/img/3.jpg
+img: assets/img/chameleon.jpg
 importance: 2
 category: work
 giscus_comments: true

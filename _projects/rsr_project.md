@@ -2,7 +2,7 @@
 layout: page
 title: RSR
 description: Efficient Binary and Ternary Matrix Multiplication for Neural Network Acceleration
-img: assets/img/7.jpg
+img: assets/img/rsr.png
 importance: 3
 category: work
 github: https://github.com/UIC-InDeXLab/RSR
