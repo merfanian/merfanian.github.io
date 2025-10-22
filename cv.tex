@@ -1,0 +1,373 @@
+%
+%Academic CV LaTeX Template
+% Author: Dubasi Pavan Kumar
+% LinkedIn: https://www.linkedin.com/in/im-pavankumar/
+% License: MIT
+%
+% For errors, suggestions, or improvements, please contact:
+% Email: pavankumard.pg19.ma@nitp.ac.in
+%
+
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+\definecolor{placeholdercolor}{RGB}{204, 102, 0} % Orange color for placeholders
+\newcommand{\placeholder}[1]{\textcolor{placeholdercolor}{#1}}
+
+% Page layout
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt} % Addressing fancyhdr warning
+
+% Hyperlink setup (moved after fancyhdr to address warning)
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+% Commands for icon sizing and positioning
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+\newcommand{\ieeeicon}[1]{\raisebox{-0.3em}{\resizebox{!}{1.3em}{#1}}}
+
+% Font options
+\newcommand{\headerfonti}{\fontfamily{phv}\selectfont} % Helvetica-like (similar to Arial/Calibri)
+\newcommand{\headerfontii}{\fontfamily{ptm}\selectfont} % Times-like (similar to Times New Roman)
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
+\newcommand{\headerfontiv}{\fontfamily{pbk}\selectfont} % Bookman (readable serif)
+\newcommand{\headerfontv}{\fontfamily{pag}\selectfont} % Avant Garde-like (similar to Trebuchet MS)
+\newcommand{\headerfontvi}{\fontfamily{cmss}\selectfont} % Computer Modern Sans Serif
+\newcommand{\headerfontvii}{\fontfamily{qhv}\selectfont} % Quasi-Helvetica (another Arial/Calibri alternative)
+\newcommand{\headerfontviii}{\fontfamily{qpl}\selectfont} % Quasi-Palatino (another elegant serif option)
+\newcommand{\headerfontix}{\fontfamily{qtm}\selectfont} % Quasi-Times (another Times New Roman alternative)
+\newcommand{\headerfontx}{\fontfamily{bch}\selectfont} % Charter (clean serif font)
+
+\begin{document}
+\headerfontiii
+
+% Header
+\begin{center}
+    {\Huge\textbf{Mahdi Erfanian}}
+\end{center}
+\vspace{-6mm}
+
+\begin{center}
+    \small{
+    \socialicon{\faEnvelope}
+    \href{mailto:merfan2@uic.edu}{merfan2@uic.edu}
+    | 
+    \socialicon{\faHome}
+    \href{https://merfanian.github.io/}{merfanian.github.io} |
+    \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/merfanian/}{linkedin.com/in/merfanian} | 
+    \socialicon{\faGithub} \href{https://github.com/merfanian}{github.com/merfanian} 
+    
+    }
+\end{center}
+% \vspace{-6mm}
+
+% \begin{center}
+%     \small{
+%     \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/merfanian/}{linkedin.com/in/merfanian} | 
+%     \socialicon{\faGithub} \href{https://github.com/merfanian}{github.com/merfanian} 
+    
+%     % \ieeeicon{\includegraphics[height=1.3em]{ieee_collabratec_icon.png}} \href{https://ieee-collabratec.ieee.org/app/p/your-profile}{your-profile} |
+%     % \socialicon{\faTwitter} \href{https://twitter.com/your-handle}{your-handle}
+%     }
+% \end{center}
+\vspace{-6mm}
+\begin{center}
+    \small{Chicago, Illinois, USA}
+\end{center}
+\vspace{-6mm}
+
+% Professional Summary
+\begin{justify}
+\small{Ph.D. candidate at UIC with a strong publication record in top-tier venues (VLDB, ICML, Data Engineering Bulletin) specializing in multimodal data management, generative AI, algorithmics and efficient AI systems. My research combines generative AI and multi-modal databases to solve complex information retrieval challenges, leading to systems that outperform SOTA baselines like OpenAI's CLIP by 200\%.  I am seeking a 2026 Research Scientist Internship to build scalable AI products in areas including multimodal retrieval, foundation models, and vector databases.}    
+\end{justify}
+
+\vspace{-6mm}
+
+
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{University of Illinois Chicago}{Chicago, USA}
+{Direct Ph.D., Computer Science}{December 2022 - Present}
+\resumeItemListStart
+\footnotesize{\item Thesis: Generative AI for Multimodal Data Management
+\item M.S. in Computer Science (awarded en route to Ph.D.), Fall 2025
+\item GPA: 4.00/4.00}
+\resumeItemListEnd
+
+\resumeSubheading
+{Sharif University of Technology}{Tehran, Iran}
+{Bachelor of Science, Computer Engineering}{September 2017 - June 2022}
+\resumeItemListStart
+\footnotesize{\item GPA: 3.70/4.00
+\item Ranked 60th nationwide among ~150,000 participants in the Iranian University Entrance Exam (Konkour).}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-6mm}
+\section{\textbf{Research Interests}}
+\vspace{1mm}
+\small{
+Multimodal Data, Generative AI, LLMs, Vector Databases, Information Retrieval, Algorithmics, Distributed Systems
+}
+
+\vspace{-3mm}
+
+
+\section{\textbf{Selected Publications} \hfill \textcolor{darkblue}{\scriptsize C=Conference, J=Journal S=In Submission}}
+\vspace{0.2mm}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{S.1}]}, itemindent=0em, label={\textbf{[\arabic*]}]}]
+
+\item[\textbf{[S.1]}] \href{https://scholar.google.com/citations?user=RPhQheUAAAAJ&hl=en}{\textbf{Task-aware Data Augmentation using Generative AI for Group-distributional Robustness}}\\ \footnotesize{\textbf{Erfanian, M.}, Glavic, B., Asudeh, A. (2025).  Manuscript submitted for publication in \textit{SIGMOD 2026}}
+
+\item[\textbf{[S.2]}] \href{https://arxiv.org/abs/2412.00639}{\textbf{Needle: A Generative AI-Powered Multi-modal Database for Answering Complex Natural Language Queries}}\\ \footnotesize{\textbf{Erfanian, M.}, Dehghankar, M., Asudeh, A. (2025).  Manuscript submitted for publication in \textit{ICLR 2025}}
+
+\item[\textbf{[C.1]}] \href{https://arxiv.org/abs/2411.06360}{\textbf{An Efficient Matrix Multiplication Algorithm for Accelerating Inference in Binary and Ternary Neural Networks}}\\ \footnotesize{Dehghankar, M., \textbf{Erfanian, M.}, Asudeh, A. (2024). In \textit{The 2025 International Conference on Machine Learning}}
+
+\item[\textbf{[C.2]}] \href{https://doi.org/10.14778/3681954.3682014}{\textbf{Chameleon: Foundation Models for Fairness-Aware Multi-Modal Data Augmentation to Enhance Coverage of Minorities}}\\ \footnotesize{\textbf{Erfanian, M.}, Jagadish, H. V., Asudeh, A. (2024). In \textit{Proceedings of the VLDB Endowment}}\\ {\tiny DOI: 10.14778/3681954.3682014}
+
+\item[\textbf{[C.3]}] \href{https://www.vldb.org/pvldb/vol17/p4417-shahbazi.pdf}{\textbf{FairEM360: A Suite for Responsible Entity Matching}}\\ \footnotesize{Shahbazi, N., \textbf{Erfanian, M.}, Asudeh, A., Nargesian, F., Srivastava, D. (2024). In \textit{Proceedings of the VLDB Endowment}}\\ {\tiny DOI: 10.14778/3685800.3685889}
+
+\item[\textbf{[J.1]}] \href{http://sites.computer.org/debull/A24mar/A24MAR-CD.pdf#page=5}{\textbf{Coverage-based Data-centric Approaches for Responsible and Trustworthy AI}}\\ \footnotesize{Shahbazi, N., \textbf{Erfanian, M.}, Asudeh, A. (2024).  In \textit{Bulletin of the IEEE Computer Society Technical Committee on Data Engineering}}
+
+\item[\textbf{[C.4]}] \href{https://doi.org/10.1109/HiPC58850.2023.00040}{\textbf{Graph Pattern Mining Paradigms: Consolidation and Renewed Bearing}}\\ \footnotesize{Dias, V., Ferraz, S., Vadlamani, A., \textbf{Erfanian, M.}, Teixeira, C. H., Guedes, D., ... Parthasarathy, S. (2023, December). In \textit{2023 IEEE 30th International Conference on High Performance Computing, Data, and Analytics (HiPC)}}\\ \tiny{DOI: 10.1109/HiPC58850.2023.00040}
+
+\end{enumerate}
+}
+
+
+\section{\textbf{Work and Research Experiences}}
+\vspace{-0.4mm}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Research Assistant}{Chicago, Illinois}
+      {{IndexLab, University of Illinois Chicago [\href{https://www.cs.uic.edu/~indexlab/}{\faIcon{globe}}]}}{June 2023 - Present}
+      \resumeItemListStart
+        \item Researching under supervision of  \href{https://cs.uic.edu/profiles/asudeh-abolfazl/}{Dr. Abolfazl Asudeh} on databases and responsible data management. 
+        \item Developed \href{https://www.cs.uic.edu/~indexlab/Needle/overview.html}{Needle}, an efficient powerful text-to-image retrieval framework that  \textbf{outperformed OpenAI's CLIP by 200\% }in mean average precision on complex natural language queries.
+        \item Implemented \href{https://github.com/UIC-InDeXLab/RSR}{RSR}, an efficient binary/ternary matrix multiplication method, accelerating model inference time by \textbf{24x }compared to the standard \textbf{NumPy} baseline and \textbf{2.5x} on \textbf{Quantized LLMs}
+        \item Developed \href{https://github.com/UIC-InDeXLab/Chameleon}{Chameleon}, a fairness-aware data augmentation method that improved model accuracy on under-represented groups by \textbf{22\%} on the \textbf{FERETDB} benchmark on average.
+        \item Developed \href{https://www.youtube.com/watch?v=euNuleF2P94}{FairEM360}, a framework for auditing and mitigating bias in entity matching. 
+        % reducing fairness disparities by \placeholder{[Y\%]} across demographic groups.
+      \resumeItemListEnd 
+  \resumeSubheading
+    {Research Assistant}{Columbus, Ohio}
+    {Dreese Lab, The Ohio State University}{December 2022 - August 2023}
+    \resumeItemListStart
+      \item Researched graph and pattern mining under the supervision of \href{http://web.cse.ohio-state.edu/~parthasarathy.2/}{Dr. Srinivasan Parthasarathy}.
+      \item Developed SYSML+, an enhanced stylometry framework that improved author identification accuracy by \textbf{3\%} over the baseline SYSML system. 
+      % \item Implemented a novel clique enumeration algorithm within the Fractal distributed framework (Apache Spark), reducing query latency by \placeholder{[A\%]} on graphs with over \placeholder{[B million]} nodes. 
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Software Engineer}{Tehran, Iran}
+    {Software Engineering Lab, Sharif University of Technology}{March 2022 - August 2022}
+    \resumeItemListStart
+      \item B.Sc. Project: Architected and built a CI/CD pipeline for a containerized, microservice-based web application.
+      \item Optimized a stock market application's deployment from a monolithic to a distributed architecture, improving scalability and deployment speed.
+      \item Decreased production Docker image size by \textbf{over 95\%} compared to traditional build methods, enabling faster deployments.
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Engineer}{Tehran, Iran}
+      {{Divar Corp. [\href{https://careers.divar.ir/en/about-divar}{\faIcon{globe}}]}}{September 2019 - March 2022}
+      \resumeItemListStart
+        \item \textit{Divar is Iran's largest classifieds platform with over \textbf{40 million} active users and \textbf{200 TB} of data.}
+        \item Engineered and maintained the core data pipeline (Airflow, Spark, S3) processing over \textbf{200TB} of data, improving data availability for a team of \textbf{40+} data analysts.
+        \item Deployed a distributed JupyterHub on Kubernetes, enabling on-demand, scalable analysis environments for the data science team and cutting down experiment setup time.
+        \item Automated ETL deployment workflows using GitLab CI/CD, reducing manual deployment time from hours to minutes and eliminating release errors.
+      \resumeItemListEnd 
+
+      \resumeSubheading
+        {Software Engineering Intern}{Tehran, Iran}
+        {Rahnema College}{August 2019 - November 2019}
+      \resumeItemListStart
+        \item Designed and developed an E-commerce auction application using a microservice architecture (Spring Boot, ReactJS, Docker).
+        \item Implemented a push notification service from scratch using Spring Boot and WebSocket. 
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Skills}}
+\vspace{-0.3mm}
+ \resumeHeadingSkillStart
+  \resumeSubItem{Languages:}
+    {Python, Java, Golang, C/C++, SQL, Scala, JavaScript, Bash}
+  \resumeSubItem{AI / ML Frameworks:}
+  { PyTorch, NumPy, Pandas, NetworkX}
+  \resumeSubItem{Data Systems \& Databases:}
+  {Apache Spark, Apache Airflow, HDFS, PostgreSQL, MySQL, Redis}
+  \resumeSubItem{DevOps \& Web:}
+    { Docker, Kubernetes, Ansible, Git, FastAPI, Django, Spring Boot, ReactJS}
+ \resumeHeadingSkillEnd
+
+
+\section{\textbf{Professional Activities}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeProject
+  {Teaching Assistant}
+  {University of Illinois Chicago, The Ohio State University, Sharif University of Technology}
+  {}
+  {}
+\resumeItemListStart
+  \item \textbf{UIC}: Databases (Spring 24, Fall 23)
+  \item \textbf{OSU}: Introduction to Java (Summer 23, Spring 23)
+  \item \textbf{SUT}: Computer Networks (Spring 21), Computer Architecture (Spring 21, Fall 20), Computer Structure and Languages (Fall 20), Systems Analysis and Design (Fall 20), Design of Algorithms (Spring 20), Fundamentals of Programming (Fall 18)
+\resumeItemListEnd
+\resumeProject
+  {Conference/Journal Reviewer}
+  {}
+  {}
+  {}
+\vspace{-3mm}
+\resumeItemListStart
+  \item \textbf{ICLR 2025} (Reviewer)
+  \item \textbf{NeurIPS 2025 DynaFront Workshop} (Reviewer)
+  \item \textbf{CIKM 2025} (PC Member and Reviewer)
+  \item \textbf{TKDE 2025} (Reviewer) (IEEE Transactions on Knowledge and Data Engineering)
+  \item \textbf{CIKM 2024} (Reviewer) (International Conference on Information and Knowledge Management) 
+  \item \textbf{TKDE 2024} (Reviewer) (IEEE Transactions on Knowledge and Data Engineering)
+  \item \textbf{PETRA 2024 (ETHER-AI workshop)} (Reviewer)
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Notable Courses}}
+\small{Cloud Computing \small{\normalfont{(A/Grad)}}, \space
+Advanced Algorithms \small{\normalfont{(A/Grad)}}, \space
+Introduction to Network Science \small{\normalfont{(A/Grad)}}, \space
+Algorithms I \small{\normalfont{(A/Grad)}}, \space
+Software Engineering \small{\normalfont{(4/4)}}, \space
+Modern Information Retrieval \small{\normalfont{(4/4)}}, \space
+Functional Programming  \small{\normalfont{(4/4)}},
+Design of Algorithms \small{\normalfont{(4/4)}}, \space
+Data Structures and Algorithms \small{\normalfont{(4/4)}}, \space
+Databases Design \small{\normalfont{(4/4)}}}
+
+\end{document}
