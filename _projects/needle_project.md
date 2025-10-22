@@ -26,20 +26,6 @@ The system leverages cutting-edge generative AI techniques to bridge the gap bet
 
 This work has been submitted to **ICLR 2025** and represents a significant advancement in the field of multimodal data management and information retrieval systems.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="Needle Architecture" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="Performance Comparison" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="Query Processing" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Needle system architecture, performance comparison with baselines, and query processing pipeline.
-</div>
 
 ## Research Context
 
