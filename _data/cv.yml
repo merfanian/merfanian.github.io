@@ -2,96 +2,124 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Mahdi Erfanian
+    - name: Location
+      value: Chicago, Illinois, USA
     - name: Languages
-      value: English, German
+      value: English, Persian (Farsi)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Direct Ph.D., Computer Science
+      institution: University of Illinois Chicago, Chicago, USA
+      year: December 2022 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Thesis: Generative AI for Multimodal Data Management
+        - M.S. in Computer Science (awarded en route to Ph.D.), Fall 2025
+        - GPA: 4.00/4.00
+    - title: Bachelor of Science, Computer Engineering
+      institution: Sharif University of Technology, Tehran, Iran
+      year: September 2017 - June 2022
       description:
-        - Description 1.
-        - Description 2.
+        - GPA: 3.70/4.00
+        - Ranked 60th nationwide among ~150,000 participants in the Iranian University Entrance Exam (Konkour)
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Assistant
+      institution: IndexLab, University of Illinois Chicago
+      year: June 2023 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Researching under supervision of Dr. Abolfazl Asudeh on databases and responsible data management
+        - Developed Needle, an efficient powerful text-to-image retrieval framework that outperformed OpenAI's CLIP by 200% in mean average precision on complex natural language queries
+        - Implemented RSR, an efficient binary/ternary matrix multiplication method, accelerating model inference time by 24x compared to the standard NumPy baseline and 2.5x on Quantized LLMs
+        - Developed Chameleon, a fairness-aware data augmentation method that improved model accuracy on under-represented groups by 22% on the FERETDB benchmark on average
+        - Developed FairEM360, a framework for auditing and mitigating bias in entity matching
+    - title: Research Assistant
+      institution: Dreese Lab, The Ohio State University
+      year: December 2022 - August 2023
       description:
-        - Description 1.
-        - Description 2.
+        - Researched graph and pattern mining under the supervision of Dr. Srinivasan Parthasarathy
+        - Developed SYSML+, an enhanced stylometry framework that improved author identification accuracy by 3% over the baseline SYSML system
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Industry Experience
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Software Engineer
+      institution: Software Engineering Lab, Sharif University of Technology
+      year: March 2022 - August 2022
+      description:
+        - B.Sc. Project: Architected and built a CI/CD pipeline for a containerized, microservice-based web application
+        - Optimized a stock market application's deployment from a monolithic to a distributed architecture, improving scalability and deployment speed
+        - Decreased production Docker image size by over 95% compared to traditional build methods, enabling faster deployments
+    - title: Data Engineer
+      institution: Divar Corp.
+      year: September 2019 - March 2022
+      description:
+        - Divar is Iran's largest classifieds platform with over 40 million active users and 200 TB of data
+        - Engineered and maintained the core data pipeline (Airflow, Spark, S3) processing over 200TB of data, improving data availability for a team of 40+ data analysts
+        - Deployed a distributed JupyterHub on Kubernetes, enabling on-demand, scalable analysis environments for the data science team and cutting down experiment setup time
+        - Automated ETL deployment workflows using GitLab CI/CD, reducing manual deployment time from hours to minutes and eliminating release errors
+    - title: Software Engineering Intern
+      institution: Rahnema College
+      year: August 2019 - November 2019
+      description:
+        - Designed and developed an E-commerce auction application using a microservice architecture (Spring Boot, ReactJS, Docker)
+        - Implemented a push notification service from scratch using Spring Boot and WebSocket
 
-- title: Honors and Awards
+- title: Professional Activities
   type: time_table
   contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - title: Teaching Assistant
+      institution: University of Illinois Chicago, The Ohio State University, Sharif University of Technology
+      year: 2018 - Present
+      description:
+        - UIC: Databases (Spring 24, Fall 23)
+        - OSU: Introduction to Java (Summer 23, Spring 23)
+        - SUT: Computer Networks (Spring 21), Computer Architecture (Spring 21, Fall 20), Computer Structure and Languages (Fall 20), Systems Analysis and Design (Fall 20), Design of Algorithms (Spring 20), Fundamentals of Programming (Fall 18)
+    - title: Conference/Journal Reviewer
+      institution: Various
+      year: 2024 - Present
+      description:
+        - ICLR 2025 (Reviewer)
+        - NeurIPS 2025 DynaFront Workshop (Reviewer)
+        - CIKM 2025 (PC Member and Reviewer)
+        - TKDE 2025 (Reviewer) (IEEE Transactions on Knowledge and Data Engineering)
+        - CIKM 2024 (Reviewer) (International Conference on Information and Knowledge Management)
+        - TKDE 2024 (Reviewer) (IEEE Transactions on Knowledge and Data Engineering)
+        - PETRA 2024 (ETHER-AI workshop) (Reviewer)
 
-- title: Academic Interests
+- title: Research Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Multimodal Data Management
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Text-to-image retrieval systems
+        - Foundation models for data augmentation
+        - Vector databases and information retrieval
+    - title: Generative AI and LLMs
       items:
-        - Description 1.
-        - Description 2.
+        - Large language model applications
+        - Synthetic data generation
+        - Algorithmic fairness in AI systems
+    - title: Algorithmics and Distributed Systems
+      items:
+        - Efficient matrix multiplication algorithms
+        - Binary and ternary neural networks
+        - Scalable data processing systems
 
-- title: Other Interests
+- title: Notable Courses
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Cloud Computing (A/Grad)
+    - Advanced Algorithms (A/Grad)
+    - Introduction to Network Science (A/Grad)
+    - Algorithms I (A/Grad)
+    - Software Engineering (4/4)
+    - Modern Information Retrieval (4/4)
+    - Functional Programming (4/4)
+    - Design of Algorithms (4/4)
+    - Data Structures and Algorithms (4/4)
+    - Databases Design (4/4)

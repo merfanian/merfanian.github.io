@@ -1,9 +1,31 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"VLDB":
+  url: https://www.vldb.org/
+  color: "#1f77b4"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"ICML":
+  url: https://icml.cc/
+  color: "#ff7f0e"
 
-"Vision":
-  color: "#009f36"
+"ICLR":
+  url: https://iclr.cc/
+  color: "#2ca02c"
+
+"SIGMOD":
+  url: https://www.sigmod.org/
+  color: "#d62728"
+
+"TKDE":
+  url: https://www.computer.org/csdl/journal/tk
+  color: "#9467bd"
+
+"HiPC":
+  url: https://hipc.org/
+  color: "#8c564b"
+
+"IEEE Data Eng. Bull.":
+  url: http://sites.computer.org/debull/
+  color: "#e377c2"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#7f7f7f"

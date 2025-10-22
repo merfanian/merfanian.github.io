@@ -1,34 +1,55 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"asudeh":
+  - firstname: ["Abolfazl", "A."]
+    url: https://cs.uic.edu/profiles/asudeh-abolfazl/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"jagadish":
+  - firstname: ["H. V.", "Hari"]
+    url: https://web.eecs.umich.edu/~jag/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"dehghankar":
+  - firstname: ["Mohsen", "M."]
+    url: https://github.com/mohsen-dehghankar
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"shahbazi":
+  - firstname: ["Nima", "N."]
+    url: https://www.linkedin.com/in/nima-shahbazi/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"nargesian":
+  - firstname: ["Fatemeh", "F."]
+    url: https://www.cs.mcgill.ca/~fnargesi/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"srivastava":
+  - firstname: ["Divesh", "D."]
+    url: https://www.cs.nyu.edu/~divesh/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"parthasarathy":
+  - firstname: ["Srinivasan", "S."]
+    url: http://web.cse.ohio-state.edu/~parthasarathy.2/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"dias":
+  - firstname: ["Vinicius", "V."]
+    url: https://www.linkedin.com/in/vinicius-dias-8a0b1a1a/
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"ferraz":
+  - firstname: ["Samuel", "S."]
+    url: https://www.linkedin.com/in/samuel-ferraz/
+
+"vadlamani":
+  - firstname: ["Aditya", "A."]
+    url: https://www.linkedin.com/in/aditya-vadlamani/
+
+"teixeira":
+  - firstname: ["Carlos H. C.", "Carlos"]
+    url: https://www.linkedin.com/in/carlos-teixeira/
+
+"guedes":
+  - firstname: ["Dorgival", "D."]
+    url: https://www.linkedin.com/in/dorgival-guedes/
+
+"meira":
+  - firstname: ["Wagner", "W."]
+    url: https://www.linkedin.com/in/wagner-meira/
+
+"glavic":
+  - firstname: ["Boris", "B."]
+    url: https://www.cs.iit.edu/~glavic/

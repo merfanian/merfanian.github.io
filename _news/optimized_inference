@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Optimized LLM is out! this is so exciting and a groundbreaking paper!
+Our work on optimized inference for binary and ternary neural networks is now available on arXiv! This groundbreaking research achieves significant speedup improvements for quantized LLMs.
