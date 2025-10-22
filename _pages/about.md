@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>3028 Engineering Research Facility,</p>
-    <p>842 W Taylor street,</p>
+    <p>5453, Computer Design Research and Learning Center (CDRLC)</p>
+    <p>850 W Taylor street,</p>
     <p>Chicago, IL 60607</p>
 
 news: true # includes a list of news items
