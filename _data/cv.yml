@@ -28,11 +28,17 @@
 - title: Research Experience
   type: time_table
   contents:
+    - title: Ph.D. Research Intern
+      institution: Microsoft (Code|AI team), Redmond, WA (Remote)
+      year: Jan 2026 - Present
+      description:
+        - Researching on mitigating hallucination in LLMs and GenAI as a Code Agent (Copilot, Codex)
+        - Fine-tuning LLMs using curated datasets to reduce hallucinations
     - title: Research Assistant
       institution: IndexLab, University of Illinois Chicago
       year: June 2023 - Present
       description:
-        - Researching under supervision of Dr. Abolfazl Asudeh on databases and responsible data management
+        - Researching under supervision of Dr. Abolfazl Asudeh on databases, LLMs and responsible data management
         - Developed Needle, an efficient powerful text-to-image retrieval framework that outperformed OpenAI's CLIP by 200% in mean average precision on complex natural language queries
         - Implemented RSR, an efficient binary/ternary matrix multiplication method, accelerating model inference time by 24x compared to the standard NumPy baseline and 2.5x on Quantized LLMs
         - Developed Chameleon, a fairness-aware data augmentation method that improved model accuracy on under-represented groups by 22% on the FERETDB benchmark on average
@@ -72,6 +78,12 @@
 - title: Professional Activities
   type: time_table
   contents:
+    - title: Invited Lectures/Talks
+      institution: University of Illinois Chicago
+      year: 2025 - 2026
+      description:
+        - "CS516. Responsible Data Science and Alg. Fairness: Guest Lecture on Generative AI and its applications in Fairness, UIC (2026)"
+        - "CS418. Introduction to Data Science: Guest Lecture on Generative AI and Multimodal Data Management, UIC (2025)"
     - title: Teaching Assistant
       institution: University of Illinois Chicago, The Ohio State University, Sharif University of Technology
       year: 2018 - Present
@@ -79,17 +91,12 @@
         - UIC: Databases (Spring 24, Fall 23)
         - OSU: Introduction to Java (Summer 23, Spring 23)
         - SUT: Computer Networks (Spring 21), Computer Architecture (Spring 21, Fall 20), Computer Structure and Languages (Fall 20), Systems Analysis and Design (Fall 20), Design of Algorithms (Spring 20), Fundamentals of Programming (Fall 18)
-    - title: Conference/Journal Reviewer
+    - title: Program Committee & Reviewing
       institution: Various
       year: 2024 - Present
       description:
-        - ICLR 2025 (Reviewer)
-        - NeurIPS 2025 DynaFront Workshop (Reviewer)
-        - CIKM 2025 (PC Member and Reviewer)
-        - TKDE 2025 (Reviewer) (IEEE Transactions on Knowledge and Data Engineering)
-        - CIKM 2024 (Reviewer) (International Conference on Information and Knowledge Management)
-        - TKDE 2024 (Reviewer) (IEEE Transactions on Knowledge and Data Engineering)
-        - PETRA 2024 (ETHER-AI workshop) (Reviewer)
+        - "PC Member: WWW 2026, CIKM 2026/2025/2024, KDD 2026, NeurIPS 2026"
+        - "Reviewer: ICLR 2026, NeurIPS 2025 (DynaFront), TKDE 2025/2024, PETRA 2024 (ETHER-AI)"
 
 - title: Research Interests
   type: nested_list
