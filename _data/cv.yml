@@ -29,21 +29,24 @@
   type: time_table
   contents:
     - title: Ph.D. Research Intern
-      institution: Microsoft (CodeAI team), Redmond, WA (Remote)
+      institution: Microsoft (Code | AI team), Redmond, WA (Remote)
       year: Jan 2026 - Present
       description:
-        - Researching on mitigating hallucination in LLMs and GenAI as a Code Agent (Copilot, Codex)
-        - Fine-tuning LLMs using curated datasets to reduce hallucinations
-    - title: Research Assistant
-      institution: IndexLab, University of Illinois Chicago
+        - Researching hallucination mitigation in large language models and the use of generative AI as a coding agent (GitHub Copilot, VS Code)
+        - Designed Delulu, the first execution-verified multilingual benchmark for hallucination detection in fill-in-the-middle code generation
+        - Investigated synthetic-data fine-tuning for FIM models, improving Qwen-7B exact-match performance by 22% on code hallucination benchmarks
+        - Proposed an algorithm for multi-turn routing in VS Code and GitHub CLI Auto mode, reducing cancellation rate by 9% and user dissatisfaction rate by 16% in production
+        - Fine-tuning frontier LLMs on curated datasets to reduce hallucination rates in real-world code completion
+    - title: Graduate Research Assistant
+      institution: InDeXLab, University of Illinois Chicago
       year: June 2023 - Present
       description:
-        - Researching under supervision of Dr. Abolfazl Asudeh on databases, LLMs and responsible data management
-        - Developed Needle, an efficient powerful text-to-image retrieval framework that outperformed OpenAI's CLIP by 200% in mean average precision on complex natural language queries
-        - Implemented RSR, an efficient binary/ternary matrix multiplication method, accelerating model inference time by 24x compared to the standard NumPy baseline and 2.5x on Quantized LLMs
-        - Developed Chameleon, a fairness-aware data augmentation method that improved model accuracy on under-represented groups by 22% on the FERETDB benchmark on average
-        - Developed FairEM360, a framework for auditing and mitigating bias in entity matching
-    - title: Research Assistant
+        - Conducting research under Dr. Abolfazl Asudeh on databases, LLMs, and responsible data management
+        - Developed Needle, a generative-AI-powered text-to-image retrieval framework achieving up to 3x mean-average-precision improvement over OpenAI's CLIP on complex natural-language queries
+        - Co-developed RSR, an efficient binary/ternary matrix multiplication algorithm, accelerating inference by up to 24x over NumPy and 2.5x on quantized LLMs
+        - Developed Chameleon, a fairness-aware data augmentation method improving accuracy on under-represented groups by an average of 22% on FERET
+        - Co-developed FairEM360, a framework for auditing and mitigating bias in entity-matching pipelines
+    - title: Graduate Research Assistant
       institution: Dreese Lab, The Ohio State University
       year: December 2022 - August 2023
       description:
@@ -74,6 +77,44 @@
       description:
         - Designed and developed an E-commerce auction application using a microservice architecture (Spring Boot, ReactJS, Docker)
         - Implemented a push notification service from scratch using Spring Boot and WebSocket
+
+- title: Technical Skills
+  type: map
+  contents:
+    - name: Programming
+      value: Python, Java, Go, C/C++, Scala, SQL, JavaScript, Bash, Kusto
+    - name: AI / ML
+      value: PyTorch, Hugging Face Transformers, NumPy, Pandas, NetworkX
+    - name: Data Systems
+      value: Apache Spark, Apache Airflow, HDFS, PostgreSQL, MySQL, Redis, Milvus and other vector databases
+    - name: Cloud & DevOps
+      value: Docker, Kubernetes, Azure AI Services, Azure DevOps, GitLab CI/CD, Git
+    - name: Web & Application Frameworks
+      value: FastAPI, Django, Spring Boot, React
+
+- title: Honors and Awards
+  type: list
+  contents:
+    - VLDB 2026 Student Travel Award (NSF-sponsored), VLDB Endowment
+    - "Top 0.04% nationally in the Iranian University Entrance Exam (Konkour): ranked 60th of ~150,000 participants"
+    - Perfect graduate GPA (4.00/4.00) across Ph.D. coursework at UIC
+
+- title: Open-Source Projects and Contributions
+  type: time_table
+  contents:
+    - title: Visual Studio Code
+      institution: Microsoft
+      description:
+        - Contributor to Microsoft's open-source code editor; landed changes in the GitHub Copilot integration with the Code | AI team
+    - title: Needle and RSR
+      institution: UIC InDeXLab
+      description:
+        - Open-source research artifacts for generative-AI image retrieval and binary/ternary matrix multiplication, with code and demos
+        - RSR achieves up to 24x speedup over NumPy
+    - title: BibTeX Verifier
+      institution: Independent open-source project (75+ GitHub stars)
+      description:
+        - Browser-based tool that audits .bib files against Semantic Scholar and Crossref, displays field-level differences, and exports a corrected bibliography
 
 - title: Professional Activities
   type: time_table
