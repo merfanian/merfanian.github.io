@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started a Ph.D. Research Internship at **Microsoft** (CodeAI team)! :rocket: Working on mitigating hallucination in LLMs and GenAI code agents including Copilot and Codex.
+Started a Ph.D. Research Internship with Microsoft's **Code | AI** team! :rocket: Working on hallucination mitigation in LLMs and generative AI coding agents, including GitHub Copilot and VS Code.

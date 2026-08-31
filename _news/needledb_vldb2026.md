@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-"NeedleDB: A Generative-AI Based System for Accurate and Efficient Image Retrieval using Complex NL Queries" has been submitted to **VLDB 2026**! :sparkles:
+Released the preprint **NeedleDB: A Generative-AI-Based System for Accurate and Efficient Image Retrieval using Complex Natural Language Queries**. :sparkles:

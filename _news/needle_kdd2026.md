@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-"Needle: A Generative AI-Powered Multi-modal Database for Answering Complex Natural Language Queries" has been submitted to **KDD 2026**! :tada:
+Our paper **Needle: A Generative-AI-Powered Multimodal Database for Answering Complex Natural Language Queries** has been submitted to **TMLR**. Needle achieves up to a 3x improvement in mean average precision over OpenAI's CLIP on complex natural-language queries. :tada:
