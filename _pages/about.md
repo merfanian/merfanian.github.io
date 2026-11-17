@@ -6,7 +6,7 @@ subtitle: Ph.D. Candidate at UIC | Research Intern at Microsoft
 
 profile:
   align: right
-  image: prof_pic.png
+  image: profile_photo.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>5453, Computer Design Research and Learning Center (CDRLC)</p>
