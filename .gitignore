@@ -13,3 +13,8 @@ vendor
 .idea
 # local LaTeX CV source (separate git repo)
 cv_source/
+
+# local build-check output
+.site_check/
+.build.log
+.override.yml
