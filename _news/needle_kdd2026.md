@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper **Needle: A Generative-AI-Powered Multimodal Database for Answering Complex Natural Language Queries** has been submitted to **TMLR**. Needle achieves up to a 3x improvement in mean average precision over OpenAI's CLIP on complex natural-language queries. :tada:
+Released the preprint **Needle: A Generative-AI-Powered Multimodal Database for Answering Complex Natural Language Queries**. Needle achieves up to a 3x improvement in mean average precision over OpenAI's CLIP on complex natural-language queries. :tada:

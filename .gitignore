@@ -11,3 +11,5 @@ assets/libs/
 node_modules/
 vendor
 .idea
+# local LaTeX CV source (separate git repo)
+cv_source/

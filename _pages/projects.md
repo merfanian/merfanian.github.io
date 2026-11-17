@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A collection of my research projects and contributions.
+description: Research systems I have built and open-source tools I maintain.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [research, open-source]
 horizontal: false
 ---
 

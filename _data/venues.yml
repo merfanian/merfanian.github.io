@@ -29,3 +29,14 @@
 "arXiv":
   url: https://arxiv.org/
   color: "#7f7f7f"
+
+"TMLR":
+  url: https://jmlr.org/tmlr/
+  color: "#2e7d32"
+
+"IEEE DEB":
+  url: http://sites.computer.org/debull/
+  color: "#e377c2"
+
+"Preprint":
+  color: "#7f7f7f"

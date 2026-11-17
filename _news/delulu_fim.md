@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Released [**Delulu-FIM**](https://arxiv.org/abs/2605.07024), the first execution-verified multilingual benchmark for hallucination detection in fill-in-the-middle code generation. The paper has been submitted to **EMNLP 2026**. :rocket:
+Released [**Delulu-FIM**](https://arxiv.org/abs/2605.07024), the first execution-verified multilingual benchmark for hallucination detection in fill-in-the-middle code generation. The dataset is available on [Hugging Face](https://huggingface.co/datasets/microsoft/delulu-fim-benchmark). :rocket:
