@@ -14,7 +14,7 @@ website: https://huggingface.co/datasets/microsoft/delulu-fim-benchmark
   </div>
 </div>
 
-Code assistants such as GitHub Copilot often complete code in **fill-in-the-middle (FIM)** mode: the model sees the code before and after the cursor and writes the missing middle. Many of their worst mistakes are _hallucinations_, meaning calls to APIs, attributes or functions that look plausible but don't exist. I built this work during my Ph.D. research internship with Microsoft's Code&#124;AI team.
+Code assistants such as GitHub Copilot often complete code in **fill-in-the-middle (FIM)** mode: the model sees the code before and after the cursor and writes the missing middle. Many of their worst mistakes are _hallucinations_, meaning calls to APIs, attributes or functions that look plausible but don't exist. I built this work as a Student Researcher with Microsoft's Code&#124;AI team.
 
 ## Delulu-FIM benchmark
 
